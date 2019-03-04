@@ -7,11 +7,3 @@ Given('User prints comment {string}', (comment) => {
 When('User navigates to the {string} page with url {string}', (_, url) => {
     return browser.get(url);
 });
-
-When('User enters {string} in {string} {string}', (text, _, locator) => {
-    return element(by.css(locator)).sendKeys(text);
-});
-
-When('User clicks {string} {string}', (_, locator) => {
-    return element(by.css(locator)).click();
-});
